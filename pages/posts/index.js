@@ -8,15 +8,11 @@ export default function Posts({ posts }) {
         return (
             <Link href={`/posts/${post.id}`} passHref key={post.id}>
               <div className={styles.card}>
-                <div>
                   <h3>{post.title}</h3>
-                </div>
-                <div>
                   <p>{post.body.slice(0, 100)}...</p>
                   <Link href={`/posts/${post.id}`} passHref>
                       <a className={styles.expand}>See More</a>
                   </Link>
-                </div>
               </div>
             </Link>
         );
