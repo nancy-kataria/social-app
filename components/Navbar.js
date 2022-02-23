@@ -21,20 +21,15 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
+          <Link href="/gallery" passHref>
+            <Button variant="text">Gallery</Button>
+          </Link>
+        </li>
+        <li>
           <Link href="/myProfile" passHref>
             <Button variant="text">My Profile</Button>
           </Link>
         </li>
-        {/* <li>
-          <Link href="/signin" passHref>
-            <Button variant="text">Sign In</Button>
-          </Link>
-        </li>
-        <li>
-          <Link href="/signin" passHref>
-            <Button variant="text">Sign Out</Button>
-          </Link>
-        </li> */}
       </ul>
     </div>
   );
