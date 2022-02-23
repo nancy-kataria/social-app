@@ -1,0 +1,27 @@
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 3rem;
+  }
+  
+  .card{
+    margin: 2rem 2rem 2rem 0;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 0 28px 4px rgba(0,0,0,0.1);
+    transition: transform .3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover{
+    transform: scale(1.1);
+  }
+  
+  .post{
+    margin: 4rem;
+  }
+
+  .expand{
+      color: #4B9CD3;
+  }

@@ -1,0 +1,23 @@
+.container{
+  text-align: center;
+  margin-top: 16rem;
+}
+
+.postContainer{
+  margin: 3rem 3rem;
+}
+
+.info{
+  line-height: 6px;
+  font-size: 14px;
+}
+
+.profileIcon{
+  height: 80px !important;
+  width: 80px !important;
+}
+
+.profileInfo{
+  display: flex;
+  align-items: center;
+}
