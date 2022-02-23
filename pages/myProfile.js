@@ -8,29 +8,30 @@ export default function myprofile({ users }) {
         return (
           <div className={styles.profileInfo} key={user.name.first}>
             <Avatar src={user.picture.large} className={styles.profileIcon} />
-            <div>
+            <div className={styles.userInfo}>
               <h2>
                 {user.name.first} {user.name.last}
               </h2>
               <div className={styles.info}>
-                <p>{user.email}</p>
                 <p>{user.login.username}</p>
+                <p>{user.email}</p>
               </div>
             </div>
           </div>
         );
       })}
+      <h5>No Posts Yet</h5>
     </div>
   );
 }
 
 export async function getServerSideProps() {
-  const response = await fetch(`https://randomuser.me/api/?results=1`);
-  const data = (await response.json()).results;
+  const userResponse = await fetch(`https://randomuser.me/api/?results=1`);
+  const userData = (await userResponse.json()).results;
 
   return {
     props: {
-      users: data,
+      users: userData,
     },
   };
 }
