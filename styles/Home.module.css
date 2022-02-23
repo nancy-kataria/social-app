@@ -30,3 +30,15 @@
   align-items: center;
   margin-bottom: 2rem;
 }
+
+.gallery{
+  margin: 2rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imgCard{
+  margin: 2rem 2rem 2rem 0;
+  /* padding: 1.5rem; */
+}
