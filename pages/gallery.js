@@ -39,7 +39,7 @@ export default function Gallery({images}){
         <div className={styles.gallery}>
             {data.map(image => {
                 return(
-                    <div className={styles.imgCard}>
+                    <div key={image.id} className={styles.imgCard}>
                         <Image loader={myLoader} src={`/${image.id}/${image.width}/${image.height}.jpg`} alt={image.author} width='300' height='320' />
                         <p>{image.author}</p>
                     </div>
