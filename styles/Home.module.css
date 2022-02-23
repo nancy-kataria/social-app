@@ -12,12 +12,21 @@
   font-size: 14px;
 }
 
+.profile{
+  margin: 2rem 5rem;
+}
+
 .profileIcon{
   height: 80px !important;
   width: 80px !important;
 }
 
+.userInfo{
+  margin-left: 2rem;
+}
+
 .profileInfo{
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
