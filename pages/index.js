@@ -13,6 +13,12 @@ export default function Home() {
           See What Others are doing <ArrowRight />
         </Button>
       </Link>
+      <br/>
+      <Link href="/gallery" passHref>
+        <Button variant="text">
+          Visit the Gallery <ArrowRight />
+        </Button>
+      </Link>
     </div>
   );
 }
