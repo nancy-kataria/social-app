@@ -4,7 +4,7 @@ import "../components/navbar.css";
 import { QueryClient } from "react-query";
 import { QueryClientProvider } from "react-query";
 
-const client = new QueryClient()
+const client = new QueryClient();
 
 function MyApp({ Component, pageProps }) {
   return (

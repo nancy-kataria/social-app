@@ -1,21 +1,21 @@
 import styles from "../../styles/Home.module.css";
 
 export async function getServerSideProps(context) {
-    const { params } = context;
-    const postResponse = await fetch(
-      `https://jsonplaceholder.typicode.com/posts/${params.postId}?userId=1`
-    );
-    const postData = await postResponse.json();
-    const userResponse = await fetch(
-      `https://jsonplaceholder.typicode.com/users/${params.postId}`
-    );
-    const userData = await userResponse.json();
-    return {
-      props: {
-        post: postData,
-        user: userData,
-      },
-    };
+  const { params } = context;
+  const postResponse = await fetch(
+    `https://jsonplaceholder.typicode.com/posts/${params.postId}?userId=1`
+  );
+  const postData = await postResponse.json();
+  const userResponse = await fetch(
+    `https://jsonplaceholder.typicode.com/users/${params.postId}`
+  );
+  const userData = await userResponse.json();
+  return {
+    props: {
+      post: postData,
+      user: userData,
+    },
+  };
 }
 
 export default function Post({ post, user }) {
