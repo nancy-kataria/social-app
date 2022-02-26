@@ -9,13 +9,13 @@ export default function Home() {
       <h1>SCL for a better virtual experience.</h1>
       <h1>Influence and Inspire.</h1>
       <Link href="/posts" passHref>
-        <Button variant="text">
+        <Button component="a" variant="text">
           See What Others are doing <ArrowRight />
         </Button>
       </Link>
-      <br/>
+      <br />
       <Link href="/gallery" passHref>
-        <Button variant="text">
+        <Button component="a" variant="text">
           Visit the Gallery <ArrowRight />
         </Button>
       </Link>

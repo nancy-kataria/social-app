@@ -12,22 +12,30 @@ export default function Navbar() {
       <ul className="main-nav">
         <li>
           <Link href="/" passHref>
-            <Button variant="text">Home</Button>
+            <Button component="a" variant="text">
+              Home
+            </Button>
           </Link>
         </li>
         <li>
           <Link href="/posts" passHref>
-            <Button variant="text">Feed</Button>
+            <Button component="a" variant="text">
+              Feed
+            </Button>
           </Link>
         </li>
         <li>
           <Link href="/gallery" passHref>
-            <Button variant="text">Gallery</Button>
+            <Button component="a" variant="text">
+              Gallery
+            </Button>
           </Link>
         </li>
         <li>
           <Link href="/myProfile" passHref>
-            <Button variant="text">My Profile</Button>
+            <Button component="a" variant="text">
+              My Profile
+            </Button>
           </Link>
         </li>
       </ul>
