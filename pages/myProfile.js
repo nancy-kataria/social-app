@@ -1,7 +1,7 @@
 import { Avatar } from "@material-ui/core";
 import styles from "../styles/Home.module.css";
 
-export default function myprofile({ users }) {
+export default function MyProfile({ users }) {
   return (
     <div className={styles.profile}>
       {users.map((user) => {
